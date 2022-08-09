@@ -12,6 +12,14 @@ scene.add(cube);
 
 camera.position.z = 5;
 
+function spinCube() {
+    const t = document.body.getBoundingClientRect().top;
+    cube.rotation.x += 0.05;
+    cube.rotation.z += 0.05;
+}
+
+document.body.onscroll = spinCube;
+
 var animate = function () {
     requestAnimationFrame(animate);
 
