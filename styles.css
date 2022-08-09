@@ -1,23 +1,16 @@
 @import 'reset.css';
 
-body {
-    margin: 0;
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
-#cube {
-    flex: auto;
-    align-items: center;
-    justify-content: center;
+body {
+    margin: 0;
 }
 
 main {
     position: absolute;
     color: white;
-    font-size: 50px;
-}
-
-canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
 }
