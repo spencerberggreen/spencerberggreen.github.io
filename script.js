@@ -9,8 +9,10 @@ const renderer = new THREE.WebGLRenderer({
 
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
-camera.position.setZ(0);
+
 camera.position.setX(0);
+camera.position.setY(-2.7);
+camera.position.setZ(0);
 
 renderer.render(scene, camera);
 
@@ -20,7 +22,7 @@ renderer.render(scene, camera);
 
 // cube
 
-var geometry = new THREE.BoxGeometry(1, 1, 1);
+var geometry = new THREE.BoxGeometry(0.5, 0.5, 0.5);
 var material = new THREE.MeshStandardMaterial({ color: 0x00ff00 });
 var cube = new THREE.Mesh(geometry, material);
 scene.add(cube);
@@ -30,7 +32,7 @@ scene.add(cube);
 const pointLight = new THREE.PointLight(0xffffff);
 pointLight.position.set(0, 0, 1);
 
-const ambientLight = new THREE.AmbientLight(0x444444);
+const ambientLight = new THREE.AmbientLight(0x333333);
 scene.add(pointLight, ambientLight);
 
 // helpers
@@ -42,12 +44,12 @@ scene.add(pointLight, ambientLight);
 
 camera.position.z = 5;
 
-// cube rotation
+// rotate object via scroll
 
 function spinCube() {
     const t = document.body.getBoundingClientRect().top;
-    cube.rotation.x += 0.1;
-    cube.rotation.z += 0.1;
+    cube.rotation.x += -0.1;
+    cube.rotation.z += 0;
 }
 
 document.body.onscroll = spinCube;
