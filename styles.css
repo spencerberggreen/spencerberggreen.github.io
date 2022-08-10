@@ -40,43 +40,64 @@ header {
 }
 
 nav {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
     height: 42px;
 }
 
-/* NAV BAR CONTENT */
+.nav-links {
+    display: flex;
+}
 
-#logo {
+.nav-links a {
+    padding: 10px;
+    text-decoration: none;
+}
+.logo {
     display: flex;
     height: 42px;
 }
 
-#nav-links a {
-    padding: 10px;
-    color: white;
-    text-decoration: none;
-}
-
-#nav-links a:hover {
-    color: greenyellow;
-}
-
-#hamburger {
+.burger {
     display: none;
+    cursor: pointer;
 }
 
-.menu-line {
-    width: 20px;
+.burger div {
+    width: 25px;
     height: 3px;
     background-color: white;
     margin: 5px;
 }
 
-@media all and (max-width: 768px) {
-    #hamburger {
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 50vh;
+        top: 100px;
+        background-color: rgba(0, 0, 128, 0.541);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 50%;
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+    }
+    .nav-links li {
+        opacity: 50;
+    }
+    .burger {
         display: block;
     }
+}
+
+.nav-active {
+    transform: translateX(0%);
 }
