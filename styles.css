@@ -87,16 +87,17 @@ nav {
 
 /* BURGER ANIMATION */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     body {
         overflow-x: hidden;
     }
     .nav-links {
         position: absolute;
         right: 0px;
-        height: 60vh;
+        height: 50vh;
         top: 100px;
-        background-color: rgba(29, 29, 29, 0.95);
+        min-width: 50vw;
+        background-color: black;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -158,12 +159,12 @@ h2 {
     font-size: clamp(2rem, 3vw, 8rem);
 }
 
-h5 {
-    font-size: clamp(1rem, 1vw, 4rem);
+h5,
+a {
+    font-size: clamp(1.3rem, 1vw, 4rem);
     font-family: monospace;
 }
 
-p,
-a {
-    font-size: clamp(1.1rem, 1vw, 4rem);
+p {
+    font-size: clamp(1.5rem, 1vw, 4rem);
 }
