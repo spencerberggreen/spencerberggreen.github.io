@@ -141,6 +141,7 @@ nav {
     justify-content: center;
 }
 
+nav a,
 #intro *,
 #about *,
 #projects * {
@@ -162,6 +163,7 @@ h5 {
     font-family: monospace;
 }
 
-p {
+p,
+a {
     font-size: clamp(1.1rem, 1vw, 4rem);
 }
