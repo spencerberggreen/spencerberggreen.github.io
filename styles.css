@@ -15,8 +15,9 @@
 main {
     color: white;
     position: absolute;
-    padding-left: 50px;
-    padding-right: 50px;
+    width: 100%;
+    padding-left: 10vw;
+    padding-right: 10vw;
     font-size: 1em;
 }
 
@@ -34,8 +35,8 @@ canvas {
 
 header {
     height: 100px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 5vw;
+    padding-right: 5vw;
     display: flex;
     align-items: center;
 }
@@ -55,7 +56,7 @@ nav {
 
 .nav-links a {
     color: white;
-    padding: 10px;
+    padding: 2em;
     text-decoration: none;
 }
 .logo {
@@ -84,15 +85,14 @@ nav {
     .nav-links {
         position: absolute;
         right: 0px;
-        height: 50vh;
+        height: 60vh;
         top: 100px;
-        background-color: rgba(80, 80, 80, 0.788);
+        background-color: rgba(29, 29, 29, 0.95);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        width: 50%;
-        transform: translateX(100%);
+        transform: scale(0, 1);
         transition: 0.5s ease-in;
     }
     .nav-links li {
@@ -104,8 +104,10 @@ nav {
 }
 
 .nav-active {
-    transform: translateX(0%);
+    transform: scale(1, 1);
 }
+
+/* NAV LINK ANIMATIONS */
 
 @keyframes navLinkFade {
     from {
@@ -117,6 +119,8 @@ nav {
         transform: translateX(0px);
     }
 }
+
+/* TEXT FORMATTING */
 
 #intro,
 #about {
@@ -133,19 +137,19 @@ nav {
 }
 
 h1 {
-    font-size: 5em;
+    font-size: 3em;
     font-weight: bold;
 }
 
 h2 {
-    font-size: 4em;
+    font-size: 2em;
 }
 
 h5 {
-    font-size: 2em;
+    font-size: 1.1em;
     font-family: monospace;
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 1em;
 }

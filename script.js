@@ -23,7 +23,7 @@ renderer.render(scene, camera);
 // cube
 
 var geometry = new THREE.BoxGeometry(1, 1, 1);
-var material = new THREE.MeshStandardMaterial({ color: 0x00ff00 });
+var material = new THREE.MeshStandardMaterial({ color: 0xcf77ff });
 var cube = new THREE.Mesh(geometry, material);
 scene.add(cube);
 
@@ -47,7 +47,7 @@ Array(200).fill().forEach(addStar);
 const pointLight = new THREE.PointLight(0xffffff);
 pointLight.position.set(0, 0, 1);
 
-const ambientLight = new THREE.AmbientLight(0x333333);
+const ambientLight = new THREE.AmbientLight(0x999999);
 scene.add(pointLight, ambientLight);
 
 // helpers
