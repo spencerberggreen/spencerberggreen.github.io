@@ -94,8 +94,8 @@ nav {
     .nav-links {
         position: absolute;
         right: 0px;
-        height: 50vh;
-        top: 100px;
+        height: 80vh;
+        top: 70px;
         min-width: 50vw;
         background-color: black;
         display: flex;
