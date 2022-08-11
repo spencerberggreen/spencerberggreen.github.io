@@ -29,7 +29,7 @@ scene.add(cube);
 
 function addStar() {
     const geometry = new THREE.BoxGeometry(0.25, 0.25, 0.25);
-    const material = new THREE.MeshStandardMaterial({ color: 0xffffff });
+    const material = new THREE.MeshStandardMaterial({ color: 0xfafafa });
     const star = new THREE.Mesh(geometry, material);
 
     const [x, y, z] = Array(3)
@@ -99,7 +99,7 @@ const navSlide = () => {
             if (link.style.animation) {
                 link.style.animation = '';
             } else {
-                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+                link.style.animation = `navLinkFade 0.25s ease forwards ${index / 7 + 0.1}s`;
             }
         });
     });
