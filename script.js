@@ -16,6 +16,15 @@ camera.position.setZ(-2.5);
 
 renderer.render(scene, camera);
 
+window.addEventListener('resize', onWindowResize, false);
+
+function onWindowResize() {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+
+    renderer.setSize(window.innerWidth, window.innerHeight);
+}
+
 // var renderer = new THREE.WebGLRenderer();
 // renderer.setSize(window.innerWidth, window.innerHeight);
 // document.body.appendChild(renderer.domElement);
