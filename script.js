@@ -1,4 +1,4 @@
-// setup
+// 3D SETUP
 
 var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -25,16 +25,14 @@ function onWindowResize() {
     renderer.setSize(window.innerWidth, window.innerHeight);
 }
 
-// var renderer = new THREE.WebGLRenderer();
-// renderer.setSize(window.innerWidth, window.innerHeight);
-// document.body.appendChild(renderer.domElement);
-
-// cube
+// ADD CUBE
 
 var geometry = new THREE.BoxGeometry(1, 1, 1);
 var material = new THREE.MeshStandardMaterial({ color: 0xcf77ff });
 var cube = new THREE.Mesh(geometry, material);
 scene.add(cube);
+
+// ADD RANDOM STARS
 
 function addStar() {
     const geometry = new THREE.BoxGeometry(0.25, 0.25, 0.25);
@@ -51,7 +49,7 @@ function addStar() {
 
 Array(200).fill().forEach(addStar);
 
-// lights
+// LIGHTING
 
 const pointLight = new THREE.PointLight(0xffffff);
 pointLight.position.set(0, 0, 1);
@@ -59,16 +57,16 @@ pointLight.position.set(0, 0, 1);
 const ambientLight = new THREE.AmbientLight(0x999999);
 scene.add(pointLight, ambientLight);
 
-// helpers
+// VIEW LIGHT POSITION
 
 // const lightHelper = new THREE.PointLightHelper(pointLight);
 // scene.add(lightHelper);
 
-// camera
+// CAMERA
 
 camera.position.z = 5;
 
-// scroll animation
+// SCROLL ANIMATION
 
 function spinCube() {
     const t = document.body.getBoundingClientRect().top;
@@ -81,7 +79,7 @@ function spinCube() {
 
 document.body.onscroll = spinCube;
 
-// animation loop
+// CUBE AUTO-ROTATE
 
 var animate = function () {
     requestAnimationFrame(animate);
@@ -94,16 +92,18 @@ var animate = function () {
 
 animate();
 
+// NAV MENU
+
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
 
     burger.addEventListener('click', () => {
-        // Toggle Nav
+        // NAV TOGGLE
         nav.classList.toggle('nav-active');
 
-        // Animate Links
+        // ANIMATE LINKS
         navLinks.forEach((link, index) => {
             if (link.style.animation) {
                 link.style.animation = '';

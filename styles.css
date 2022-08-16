@@ -30,10 +30,6 @@ canvas {
     left: 0;
 }
 
-/* section {
-    border: 2px solid lime;
-} */
-
 /* STRUCTURE */
 
 header {
@@ -53,13 +49,23 @@ nav {
     font-size: 1.5em;
 }
 
+#intro,
+#about,
+#projects,
+#experience {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .nav-links {
     display: flex;
 }
 
 .nav-links a {
     color: white;
-    padding: 1em;
+    padding: 0.8em;
     text-decoration: none;
 }
 
@@ -85,6 +91,26 @@ nav {
     margin: 5px;
 }
 
+#project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#project-list img {
+    max-width: 80vw;
+    max-height: 70vh;
+}
+
+#project-list li {
+    padding: 4vh;
+}
+
+#project-list a {
+    padding: 2vw;
+    float: right;
+}
+
 /* BURGER ANIMATION */
 
 @media screen and (max-width: 1000px) {
@@ -94,6 +120,7 @@ nav {
     .nav-links {
         position: absolute;
         right: 0px;
+        min-height: 250px;
         height: 80vh;
         top: 70px;
         min-width: 50vw;
@@ -132,20 +159,10 @@ nav {
 
 /* TEXT FORMATTING */
 
-#intro,
-#about,
-#projects,
-#experience {
-    min-height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 nav a,
 #intro *,
 #about *,
-#projects * {
+#projects {
     padding: 2vh;
     background-color: rgba(0, 0, 0, 0.75);
 }
