@@ -12,8 +12,8 @@ renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
 
 camera.position.setX(0);
-camera.position.setY(-2.5);
-camera.position.setZ(-2.5);
+camera.position.setY(-2);
+camera.position.setZ(0);
 
 renderer.render(scene, camera);
 
