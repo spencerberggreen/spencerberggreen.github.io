@@ -52,10 +52,10 @@ Array(200).fill().forEach(addStar);
 
 // LIGHTING
 
-const pointLight = new THREE.PointLight(0xeeeeee);
-pointLight.position.set(0, 0, 1);
+const pointLight = new THREE.PointLight(0xffffff, 1);
+pointLight.position.set(0, 0, 2);
 
-const ambientLight = new THREE.AmbientLight(0x2a3b3c);
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.3);
 scene.add(pointLight, ambientLight);
 
 // VIEW LIGHT POSITION
