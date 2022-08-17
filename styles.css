@@ -70,7 +70,7 @@ nav {
 }
 
 .nav-links a:hover {
-    color: rgb(255, 164, 255);
+    color: violet;
 }
 
 .logo {
@@ -176,12 +176,24 @@ h2 {
     font-size: clamp(2rem, 3vw, 8rem);
 }
 
-h5,
+h5 {
+    font-size: clamp(1rem, 2vw, 4rem);
+    font-family: monospace;
+}
+
 a {
-    font-size: clamp(1.3rem, 1vw, 4rem);
+    font-size: clamp(1.5rem, 1vw, 4rem);
     font-family: monospace;
 }
 
 p {
     font-size: clamp(1.5rem, 1vw, 4rem);
+}
+
+svg {
+    color: white;
+}
+
+svg:hover {
+    color: violet;
 }
