@@ -1,6 +1,7 @@
 // 3D SETUP
 
 var scene = new THREE.Scene();
+scene.background = new THREE.Color(0x212121);
 var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
 const renderer = new THREE.WebGLRenderer({
@@ -28,7 +29,7 @@ function onWindowResize() {
 // ADD CUBE
 
 var geometry = new THREE.BoxGeometry(1, 1, 1);
-var material = new THREE.MeshStandardMaterial({ color: 0xcf77ff });
+var material = new THREE.MeshStandardMaterial({ color: 0x14ffec });
 var cube = new THREE.Mesh(geometry, material);
 scene.add(cube);
 
@@ -36,7 +37,7 @@ scene.add(cube);
 
 function addStar() {
     const geometry = new THREE.BoxGeometry(0.25, 0.25, 0.25);
-    const material = new THREE.MeshStandardMaterial({ color: 0xfafafa });
+    const material = new THREE.MeshStandardMaterial({ color: 0xeeeeee });
     const star = new THREE.Mesh(geometry, material);
 
     const [x, y, z] = Array(3)
@@ -51,10 +52,10 @@ Array(200).fill().forEach(addStar);
 
 // LIGHTING
 
-const pointLight = new THREE.PointLight(0xffffff);
+const pointLight = new THREE.PointLight(0xeeeeee);
 pointLight.position.set(0, 0, 1);
 
-const ambientLight = new THREE.AmbientLight(0x999999);
+const ambientLight = new THREE.AmbientLight(0x2a3b3c);
 scene.add(pointLight, ambientLight);
 
 // VIEW LIGHT POSITION
