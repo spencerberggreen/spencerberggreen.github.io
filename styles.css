@@ -17,16 +17,16 @@ body {
     --white: #eeeeee;
     --light: #14ffec;
     --medium: #0d7377;
-    --dark: #303030c0;
-    --black: #212121;
+    --dark: #272727c0;
+    --black: #191919;
 }
 
 main {
     color: var(--white);
     position: absolute;
     width: 100%;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 8vw;
+    padding-right: 8vw;
 }
 
 canvas {
@@ -69,6 +69,10 @@ nav {
 .bg-card {
     background: var(--dark);
     padding: 5vh;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .nav-links {
@@ -111,6 +115,7 @@ nav {
 
 #project-list img {
     width: 100%;
+    max-height: 60vh;
 }
 
 #project-list li {
