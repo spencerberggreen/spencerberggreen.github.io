@@ -8,12 +8,13 @@
     margin: 0;
 }
 
-body {
-    background-color: var(--black);
-}
-
 :root {
+    /* fallback system fonts */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    /* preferred fonts */
     font-family: Arial, Helvetica, sans-serif;
+    /* color palette */
     --white: #eeeeee;
     --light: #14ffec;
     --medium: #0d7377;
@@ -25,8 +26,12 @@ main {
     color: var(--white);
     position: absolute;
     width: 100%;
-    padding-left: 16vw;
-    padding-right: 16vw;
+    padding-left: 16vmin;
+    padding-right: 16vmin;
+}
+
+body {
+    background-color: var(--black);
 }
 
 canvas {
@@ -39,8 +44,8 @@ canvas {
 
 header {
     height: 100px;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 5vmin;
+    padding-right: 5vmin;
     display: flex;
     align-items: center;
 }
@@ -51,7 +56,7 @@ nav {
     justify-content: space-between;
     width: 100%;
     height: 42px;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 #intro,
@@ -68,8 +73,8 @@ nav {
 
 .bg-card {
     background: var(--dark);
-    padding: 5vh;
-    min-height: 40vh;
+    padding: 5vmin;
+    min-height: 40vmin;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -83,7 +88,7 @@ nav {
 
 .nav-links a {
     color: var(--white);
-    padding: 0.8em;
+    padding: 0.8rem;
     text-decoration: none;
 }
 
@@ -117,15 +122,16 @@ nav {
 
 #project-list img {
     width: 100%;
-    max-height: 60vh;
+    max-height: 60vmin;
 }
 
 #project-list li {
-    padding: 4vh;
+    padding: 4vmin;
 }
 
-#project-list a {
-    padding: 2vw;
+#project-list a,
+#project-list h3 {
+    padding: 2vmin;
     float: right;
 }
 
@@ -133,8 +139,8 @@ nav {
 
 @media screen and (max-width: 1200px) {
     main {
-        padding-left: 8vw;
-        padding-right: 8vw;
+        padding-left: 8vmin;
+        padding-right: 8vmin;
     }
     body {
         overflow-x: hidden;
@@ -143,9 +149,9 @@ nav {
         position: absolute;
         right: 0px;
         min-height: 250px;
-        height: 80vh;
+        height: 80vmin;
         top: 70px;
-        min-width: 50vw;
+        min-width: 50vmin;
         background-color: var(--black);
         display: flex;
         flex-direction: column;
@@ -181,35 +187,47 @@ nav {
 
 /* TEXT FORMATTING */
 
+h1,
+h2,
+h3,
+h5 {
+    text-shadow: 0.3vmin 0.3vmin 0.5vmin black;
+}
+
 h1 {
-    font-size: clamp(3rem, 5vw, 12rem);
+    font-size: clamp(3rem, 8vmin, 8rem);
     font-weight: bold;
-    padding-top: 1vh;
-    padding-bottom: 2vh;
+    padding-top: 2vmin;
+    padding-bottom: 2vmin;
 }
 
 h2 {
-    font-size: clamp(2rem, 3vw, 8rem);
+    font-size: clamp(2rem, 3vmin, 8rem);
+}
+
+h3 {
+    font-size: clamp(2rem, 4vmin, 8rem);
 }
 
 h5 {
-    font-size: clamp(1.1rem, 1.1vw, 2.5rem);
+    font-size: clamp(1.1rem, 1.5vmin, 2.5rem);
     font-family: monospace;
     color: var(--light);
 }
 
 a {
-    font-size: clamp(1.5rem, 1vw, 4rem);
+    font-size: clamp(1.5rem, 1vmin, 4rem);
     font-family: monospace;
 }
 
 p {
-    font-size: clamp(1.5rem, 1vw, 4rem);
+    font-size: clamp(1.5rem, 1vmin, 4rem);
     padding-top: 5vh;
 }
 
 svg {
     color: var(--white);
+    filter: drop-shadow(0.2vmin 0.2vmin 0.15vmin black);
 }
 
 svg:hover {
