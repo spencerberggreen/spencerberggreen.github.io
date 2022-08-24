@@ -191,7 +191,7 @@ h1,
 h2,
 h3,
 h5 {
-    text-shadow: 0.3vmin 0.3vmin 0.5vmin black;
+    text-shadow: 0.4vmin 0.4vmin 0.6vmin black;
 }
 
 h1 {
@@ -227,7 +227,7 @@ p {
 
 svg {
     color: var(--white);
-    filter: drop-shadow(0.2vmin 0.2vmin 0.15vmin black);
+    filter: drop-shadow(3px 3px 2px black);
 }
 
 svg:hover {
