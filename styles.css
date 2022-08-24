@@ -25,8 +25,8 @@ main {
     color: var(--white);
     position: absolute;
     width: 100%;
-    padding-left: 8vw;
-    padding-right: 8vw;
+    padding-left: 16vw;
+    padding-right: 16vw;
 }
 
 canvas {
@@ -131,7 +131,11 @@ nav {
 
 /* BURGER ANIMATION */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
+    main {
+        padding-left: 8vw;
+        padding-right: 8vw;
+    }
     body {
         overflow-x: hidden;
     }
