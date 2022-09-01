@@ -1,0 +1,12 @@
+h1, ol, ul {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+ol, ul {
+    font-size: 24px;
+    font-weight: bold;
+}

@@ -133,10 +133,18 @@ nav {
     padding: 4vmin;
 }
 
-#project-list a,
-#project-list h3 {
+#project-links {
+    display: flex;
+    align-items: flex-end;
+}
+
+#project-list a {
     padding: 2vmin;
     float: right;
+}
+
+#project-list h5 {
+    padding-bottom: 1vmin;
 }
 
 /* BURGER ANIMATION */
