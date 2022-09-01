@@ -71,7 +71,7 @@ camera.position.z = 5;
 
 function spinCube() {
     const t = document.body.getBoundingClientRect().top;
-    cube.rotation.x += -0.1;
+    cube.rotation.x += -0.07;
     cube.rotation.z += 0;
     camera.rotation.x = t * -0.0002;
     camera.rotation.y = t * -0.0002;
@@ -85,8 +85,8 @@ document.body.onscroll = spinCube;
 var animate = function () {
     requestAnimationFrame(animate);
 
-    cube.rotation.x += 0.01;
-    cube.rotation.y += 0.01;
+    cube.rotation.x += 0.007;
+    cube.rotation.y += 0.007;
 
     renderer.render(scene, camera);
 };

@@ -201,8 +201,8 @@ h5 {
 h1 {
     font-size: clamp(3rem, 8vmin, 8rem);
     font-weight: bold;
-    padding-top: 2vmin;
-    padding-bottom: 2vmin;
+    padding-top: 5vmin;
+    padding-bottom: 5vmin;
 }
 
 h2 {
