@@ -48,23 +48,69 @@ header {
 #barbell {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 30%;
+    height: 20%;
     background-color: var(--black);
 }
 
-#barbell #left {
-    background-color: var(--medium);
-    width: 20%;
-    height: 15px;
+#bar-middle {
+    width: 1000px;
+    height: 6%;
+    background-color: silver;
 }
-#barbell #middle {
-    background-color: var(--light);
-    width: 60%;
-    height: 15px;
-}
-#barbell #right {
-    background-color: var(--medium);
+
+#bar-left,
+#bar-right {
     width: 20%;
-    height: 15px;
+    height: 6%;
+    background-color: silver;
+}
+
+#plates-left,
+#plates-right {
+    display: flex;
+    height: 100%;
+}
+
+.p55 {
+    height: 100%;
+    width: 22px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: red;
+}
+
+.p45 {
+    height: 100%;
+    width: 22px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: blue;
+}
+
+.p35 {
+    height: 100%;
+    width: 22px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: yellow;
+}
+
+.p25 {
+    height: 100%;
+    width: 22px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: green;
+}
+
+.p15,
+.p10,
+.p5 {
+    height: 100%;
+    width: 22px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: white;
 }
