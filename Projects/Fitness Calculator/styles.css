@@ -73,7 +73,8 @@ header {
     height: 100%;
 }
 
-.p55 {
+.l55,
+.r55 {
     height: 100%;
     width: 22px;
     border-radius: 10px;

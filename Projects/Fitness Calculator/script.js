@@ -8,6 +8,14 @@ document.getElementById('add-55').onclick = () => {
     // the 'afterend' argument states that this adjacent element
     // follows the el1 node, rather than preceding it or appearing
     // within:
-    el1.insertAdjacentHTML('afterend', '<div class="p55"></div>');
-    el2.insertAdjacentHTML('afterend', '<div class="p55"></div>');
+    el1.insertAdjacentHTML('afterend', '<div class="l55"></div>');
+    el2.insertAdjacentHTML('afterend', '<div class="r55"></div>');
+};
+
+document.getElementById('subtract-55').onclick = () => {
+    var leftPlate = document.querySelector('.l55');
+    var rightPlate = document.querySelector('.r55');
+
+    leftPlate.remove();
+    rightPlate.remove();
 };
