@@ -9,7 +9,7 @@ var yr = document.querySelector('.yellow-right');
 var gl = document.querySelector('.green-left');
 var gr = document.querySelector('.green-right');
 
-// 55 lbs
+// 55 lbs (red)
 
 document.getElementById('add-55').onclick = () => {
     // create an element AFTER the plate position
@@ -26,7 +26,7 @@ document.getElementById('subtract-55').onclick = () => {
     rightPlate.remove();
 };
 
-// 45 lbs
+// 45 lbs (blue)
 
 document.getElementById('add-45').onclick = () => {
     // create an element AFTER the plate position
@@ -43,7 +43,7 @@ document.getElementById('subtract-45').onclick = () => {
     rightPlate.remove();
 };
 
-// 35 lbs
+// 35 lbs (yellow)
 
 document.getElementById('add-35').onclick = () => {
     // create an element AFTER the plate position
@@ -60,7 +60,7 @@ document.getElementById('subtract-35').onclick = () => {
     rightPlate.remove();
 };
 
-// 25 lbs
+// 25 lbs (green)
 
 document.getElementById('add-25').onclick = () => {
     // create an element AFTER the plate position
