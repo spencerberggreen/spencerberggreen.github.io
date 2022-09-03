@@ -30,8 +30,8 @@ main {
     color: var(--white);
     position: absolute;
     width: 100%;
-    padding-left: 16vmin;
-    padding-right: 16vmin;
+    padding-left: 20vmin;
+    padding-right: 20vmin;
 }
 
 body {
