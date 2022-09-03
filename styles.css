@@ -126,8 +126,8 @@ nav {
 
 #project-list img {
     width: 100%;
-    height: auto;
-    /* max-height: 60vmin; */
+    height: 80%;
+    max-height: 60vmin;
 }
 
 #project-list li {
