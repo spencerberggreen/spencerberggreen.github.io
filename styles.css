@@ -126,7 +126,7 @@ nav {
 
 #project-list img {
     width: 100%;
-    height: auto;
+    height: 100%;
     max-height: 60vmin;
 }
 
