@@ -34,6 +34,12 @@ main {
     padding-right: 20vmin;
 }
 
+@media screen and (min-width: 1920px) {
+    main {
+        padding-left: 35vmin;
+        padding-right: 35vmin;
+    }
+}
 body {
     background-color: var(--black);
 }
@@ -78,7 +84,7 @@ nav {
 .bg-card {
     background: var(--dark);
     padding: 5vmin;
-    min-height: 40vmin;
+    min-height: 30vmin;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -203,15 +209,16 @@ nav {
 h1,
 h2,
 h3,
-h5 {
+h5,
+p {
     text-shadow: 0.4vmin 0.4vmin 0.6vmin black;
 }
 
 h1 {
-    font-size: clamp(3rem, 8vmin, 8rem);
+    font-size: clamp(40px, 8vw, 80px);
     font-weight: bold;
-    padding-top: 5vmin;
-    padding-bottom: 5vmin;
+    padding-top: 3vmin;
+    padding-bottom: 3vmin;
 }
 
 h2 {
@@ -248,4 +255,24 @@ svg {
 
 svg:hover {
     color: var(--light);
+}
+
+#contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5vmin;
+}
+
+button {
+    background-color: var(--white);
+    color: var(--black);
+    font-size: 1.2rem;
+    padding: 1vmin;
+    border-radius: 10px;
+    filter: drop-shadow(3px 3px 2px black);
+}
+
+button:hover {
+    filter: none;
 }
