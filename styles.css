@@ -259,9 +259,11 @@ svg:hover {
 
 #contact-info {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    padding: 5vmin;
+    padding-top: 5vmin;
+    min-height: 200px;
 }
 
 button {
