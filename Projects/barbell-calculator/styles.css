@@ -20,8 +20,6 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /* outline: 1px solid hotpink;
-    border-radius: 10px; */
 }
 
 body {
@@ -39,7 +37,7 @@ main {
     background-color: var(--dark);
     border-radius: 3vmin;
     height: 90vh;
-    width: 90vmin;
+    width: 90vw;
     border: 2vmin solid var(--dark);
 }
 
@@ -47,7 +45,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
+
+/* barbell graphic structure */
 
 #barbell {
     display: flex;
@@ -80,8 +81,27 @@ header {
     height: 100%;
 }
 
+/* formatting */
+
+#upper-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bar-buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.barbell-card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .spinner {
     display: flex;
+    flex-direction: column-reverse;
     align-items: center;
     font-size: 2rem;
     padding: 10px;
@@ -108,38 +128,36 @@ h3 {
 }
 
 .l55,
-.r55 {
-    height: 100%;
-    width: 22px;
-    border-radius: 10px;
-    border: 2px solid black;
-    background: linear-gradient(red 50%, black 100%);
-}
-
+.r55,
 .l45,
-.r45 {
-    height: 100%;
-    width: 22px;
-    border-radius: 10px;
-    border: 2px solid black;
-    background: linear-gradient(blue 50%, black 100%);
-}
-
+.r45,
 .l35,
-.r35 {
-    height: 100%;
-    width: 22px;
-    border-radius: 10px;
-    border: 2px solid black;
-    background: linear-gradient(yellow 50%, black 100%);
-}
-
+.r35,
 .l25,
 .r25 {
     height: 100%;
     width: 22px;
     border-radius: 10px;
     border: 2px solid black;
+}
+
+.l55,
+.r55 {
+    background: linear-gradient(red 50%, black 100%);
+}
+
+.l45,
+.r45 {
+    background: linear-gradient(blue 50%, black 100%);
+}
+
+.l35,
+.r35 {
+    background: linear-gradient(yellow 50%, black 100%);
+}
+
+.l25,
+.r25 {
     background: linear-gradient(green 50%, black 100%);
 }
 

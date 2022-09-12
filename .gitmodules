@@ -1,3 +1,6 @@
 [submodule "Projects/rock-paper-scissors"]
 	path = Projects/rock-paper-scissors
 	url = https://github.com/spencerberggreen/rock-paper-scissors
+[submodule "barbell-calculator"]
+	path = Projects/barbell-calculator
+	url = https://github.com/spencerberggreen/barbell-calculator
